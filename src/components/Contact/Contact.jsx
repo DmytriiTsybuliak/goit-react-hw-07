@@ -2,11 +2,10 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosContact } from 'react-icons/io';
 import css from './Contact.module.css';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/contactsSlice';
+import { deleteContact } from '../../redux/contactsOps';
 
 export default function Contact({ data: { id, name, number } }) {
   const dispatch = useDispatch();
-  // dispatch(deleteContact(100));
   return (
     <div className={css.contact}>
       <div>
